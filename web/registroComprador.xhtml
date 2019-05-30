@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h2>Registro Comprador</h2>
+        <h:outputLabel value="Tipo id"/>
+        <b:inputText value="#{usuarioController.comprador.idTipo}"/>
+        <h:outputLabel value="Num id"/>
+        <b:inputText value="#{usuarioController.comprador.idNum}"/>
+        <h:outputLabel value="Nombre"/>
+        <b:inputText value="#{usuarioController.comprador.nombre}"/>
+        <h:outputLabel value="Email"/>
+        <b:inputText value="#{usuarioController.comprador.email}"/>
+        <h:outputLabel value="Clave"/>
+        <b:inputText type="password" value="#{usuarioController.comprador.clave}"/>
+        <h:commandButton value="Registrar" action="${usuarioController.registrarC()}"/>
+    </h:body>
+</html>
+
